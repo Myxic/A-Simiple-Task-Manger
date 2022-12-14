@@ -4,7 +4,7 @@ using A_Simiple_Task_Manager;
 
 namespace A_Simiple_Task_Manger
 {
-    class TasksManager
+    class TasksManager 
     {
         protected static void ViewProcesses() 
 	    {
@@ -28,7 +28,7 @@ namespace A_Simiple_Task_Manger
             var runningProcesses = from proc in Process.GetProcesses()
                                    select proc.Id;
 
-            Console.WriteLine("Enter Process Id ");
+        Start: Console.WriteLine("Enter Process Id ");
             var ID = Console.ReadLine();
             try
             {
@@ -48,12 +48,24 @@ namespace A_Simiple_Task_Manger
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                goto Start;
             }
 	       
 	    }
         protected static void StartProcess() 
-	    { 
-
+	    {
+            start: Console.Write("Enter the directory of the process you want to start\n ==> ");
+            var directory = Console.ReadLine();
+            try
+            {
+                Process proc = Process.Start($"{directory}");
+            }
+            catch (Exception ex)
+            {
+                Console.Clear();
+                Console.WriteLine(ex.Message);
+                goto start;
+            }
 	    }
     }
 }
