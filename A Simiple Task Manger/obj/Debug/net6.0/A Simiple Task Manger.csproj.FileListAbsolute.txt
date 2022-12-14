@@ -1,0 +1,15 @@
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/bin/Debug/net6.0/A Simiple Task Manger
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/bin/Debug/net6.0/A Simiple Task Manger.deps.json
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/bin/Debug/net6.0/A Simiple Task Manger.runtimeconfig.json
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/bin/Debug/net6.0/A Simiple Task Manger.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/bin/Debug/net6.0/A Simiple Task Manger.pdb
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.csproj.AssemblyReference.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.AssemblyInfoInputs.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.AssemblyInfo.cs
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/refint/A Simiple Task Manger.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.pdb
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/A Simiple Task Manger.genruntimeconfig.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/A Simiple Task Manger/A Simiple Task Manger/obj/Debug/net6.0/ref/A Simiple Task Manger.dll

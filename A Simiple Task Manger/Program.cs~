@@ -1,0 +1,23 @@
+﻿using System.ComponentModel.Design;
+
+namespace A_Simiple_Task_Manger;
+class Program
+{
+    static void Main(string[] args)
+    {
+        MenuCommands();
+    }
+
+    private static void MenuCommands()
+    {
+        string Menu = "Enter\n 1: To view all Running Tasks \n2: To Create a custom process and kill it \n3: Check if a thread isLive or Backgroun \n4: To Should be able to start any task";
+        Console.WriteLine(Menu);
+        //List all the running tasks
+        //Kill any of them
+        //Should be able to start any task
+        //Create a custom process and kill it
+        //Create a custom Thread and a backgound thread
+        //Check if a thread isLive or Backgroun
+    }
+}
+
