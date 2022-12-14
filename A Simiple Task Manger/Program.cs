@@ -1,9 +1,9 @@
-﻿namespace A_Simiple_Task_Manger;
+﻿namespace A_Simiple_Task_Manager;
 class Program
 {
     static void Main(string[] args)
     {
-        MenuCommands();
+        OptionKeys();
     }
 
     private static void MenuCommands()
@@ -30,6 +30,23 @@ class Program
                 Console.WriteLine($"{input} is an invalid Option, please Select a valid option");
                 goto start;
         }
+
+    }
+
+    public static void OptionKeys(){
+        string Options = "Enter:\n0: To Return to Main Menu ";
+      start:  Console.Write($"***************************************\n{Options}\n************************************\n ==>  ");
+        string? input2 = Console.ReadLine();
+        switch (input2) {
+            case "0":
+                Console.Clear();
+                MenuCommands();
+                break;
+            default:
+                Console.Clear();
+                Console.WriteLine($"{input2} is an invalid option");
+                goto start;
+	}
     }
 }
 
