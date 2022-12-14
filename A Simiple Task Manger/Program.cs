@@ -2,7 +2,7 @@
 //using static A_Simiple_Task_Manger.TasksManager;
 
 namespace A_Simiple_Task_Manager;
-class Program : TasksManager
+class Program : Threads
 {
     static void Main(string[] args)
     {
@@ -41,7 +41,7 @@ class Program : TasksManager
     }
 
     public static void OptionKeys(){
-        string Options = "Enter:\n0: To Return to Main Menu \n 1: Kill a Process by its Id Number ";
+        string Options = "Enter:\n0: To Return to Main Menu \n 1: Kill a Process by its Id Number \n 2: To start a new process \n 3: Check Theard of a process by its Id";
       start:  Console.Write($"***************************************\n{Options}\n************************************\n ==>  ");
         string? input2 = Console.ReadLine();
         switch (input2) {
@@ -52,6 +52,14 @@ class Program : TasksManager
             case "1":
                 Console.Clear();
                 KillProcessById();
+                break;
+            case "2":
+                Console.Clear();
+                StartProcess();
+                break;
+            case "3":
+                Console.Clear();
+                CheckingThread();
                 break;
             default:
                 Console.Clear();
