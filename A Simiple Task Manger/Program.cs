@@ -1,20 +1,25 @@
-﻿namespace A_Simiple_Task_Manager;
-class Program
+﻿using A_Simiple_Task_Manger;
+//using static A_Simiple_Task_Manger.TasksManager;
+
+namespace A_Simiple_Task_Manager;
+class Program : TasksManager
 {
     static void Main(string[] args)
     {
-        OptionKeys();
+        MenuCommands();
     }
 
     private static void MenuCommands()
     {
-        string Menu = "Enter: \n 1: To view all Running Tasks \n 2: To Create a custom process and kill it \n 3: Check if a thread isLive or Backgroun \n 4: To Should be able to start any task \n 5: To Exit Console";
-       start: Console.Write($"***************************************\n{Menu}\n*****************************************\n ==> ");
+        string Menu = "Enter: \n 1: To view all Running Tasks \n 2: To Create a custom process and kill it \n 3: Check if a thread isLive or Backgroun \n 4: To Should be able to start any task\n 0: To Exit Console";
+       start: Console.Write($"******************************************\n{Menu}\n*******************************************\n ==> ");
         string? input = Console.ReadLine();
 
         switch (input)
         {
             case "1":
+                Console.Clear();
+                ViewProcesses();
                 break;
             case "2":
                 break;
@@ -23,7 +28,9 @@ class Program
             case "4":
                 break;
             case "5":
-                Environment.Exit(5);
+                break;
+            case "0":
+                Environment.Exit(0);
                 break;
             default:
                 Console.Clear();
@@ -34,13 +41,17 @@ class Program
     }
 
     public static void OptionKeys(){
-        string Options = "Enter:\n0: To Return to Main Menu ";
+        string Options = "Enter:\n0: To Return to Main Menu \n 1: Kill a Process by its Id Number ";
       start:  Console.Write($"***************************************\n{Options}\n************************************\n ==>  ");
         string? input2 = Console.ReadLine();
         switch (input2) {
             case "0":
                 Console.Clear();
                 MenuCommands();
+                break;
+            case "1":
+                Console.Clear();
+                KillProcessById();
                 break;
             default:
                 Console.Clear();
