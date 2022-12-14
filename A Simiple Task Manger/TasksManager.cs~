@@ -1,0 +1,24 @@
+﻿using System;
+using System.Diagnostics;
+
+namespace A_Simiple_Task_Manger
+{
+    class TasksManager
+    {
+        public static void ViewProcesses() 
+	    {
+            var runningProcesses = Process.GetProcesses();
+            foreach (var hey in runningProcesses) {
+                Console.WriteLine(hey.ProcessName);
+	        }
+	    }
+        private static void KillProcess()
+        {
+
+        }
+        private static void StartProcess() 
+	    { 
+
+	    }
+    }
+}
