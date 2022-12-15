@@ -26,6 +26,8 @@ class Program : Threads
             case "3":
                 break;
             case "4":
+                Console.Clear();
+                StartProcess();
                 break;
             case "5":
                 break;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using A_Simiple_Task_Manager;
 
 namespace A_Simiple_Task_Manger
 {
@@ -17,7 +18,7 @@ namespace A_Simiple_Task_Manger
 
             try
             {
-               
+
                 int Id = Convert.ToInt32(ID);
                 if (runningProcesses.Contains(Id))
                 {
@@ -26,10 +27,11 @@ namespace A_Simiple_Task_Manger
                     ProcessThreadCollection TheThread = proc.Threads;
 
                     foreach (ProcessThread pt in TheThread)
-		            {
-                        string info = $"Thread ID for {proc.ProcessName} is : {pt.Id} \t Start Time: {pt.StartTime.ToShortTimeString() }\tPriority: { pt.PriorityLevel}";
-                        Console.WriteLine(info); 
-		            }
+                    {
+                        string info = $"Thread ID for {proc.ProcessName} is : {pt.Id} \t Start Time: {pt.StartTime.ToShortTimeString()}\tPriority: {pt.PriorityLevel}";
+                        Console.WriteLine(info);
+                        Program.OptionKeys();
+                    }
                 }
                 else
                 {
@@ -43,6 +45,24 @@ namespace A_Simiple_Task_Manger
                 Console.WriteLine(ex.Message);
                 goto Start;
             }
+        }
+
+        protected static void CreateNewThread()
+        {
+            //Thread thr = Thread.GetCurrentProcessorId();
+
+        }
+        protected static void IsAlive() 
+	    {
+            //Thread thr = Thread.GetCurrentProcessorId();
+
+            //Console.WriteLine($"Is this Thread Alive? : {thr.IsAlive}");
+        }
+        protected static void IsBackGround() 
+	    {
+            //Thread thr = Thread.GetCurrentProcessorId();
+
+            //Console.WriteLine($"Is this Thread Background? : {thr.IsBackground}");
         }
     }
 }
