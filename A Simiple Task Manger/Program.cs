@@ -11,7 +11,7 @@ class Program : Threads
 
     private static void MenuCommands()
     {
-        string Menu = "Enter: \n 1: To view all Running Tasks \n 2: To Create a custom process and kill it \n 3: Check if a thread isLive or Backgroun \n 4: To Should be able to start any task\n 0: To Exit Console";
+        string Menu = "Enter: \n 1: To view all Running Tasks \n  2: To Should be able to start any task\n 0: To Exit Console";
        start: Console.Write($"******************************************\n{Menu}\n*******************************************\n ==> ");
         string? input = Console.ReadLine();
 
@@ -22,14 +22,8 @@ class Program : Threads
                 ViewProcesses();
                 break;
             case "2":
-                break;
-            case "3":
-                break;
-            case "4":
                 Console.Clear();
                 StartProcess();
-                break;
-            case "5":
                 break;
             case "0":
                 Environment.Exit(0);
@@ -68,6 +62,36 @@ class Program : Threads
                 Console.WriteLine($"{input2} is an invalid option");
                 goto start;
 	}
+    }
+    public static void ThreadsOptions() 
+    {
+        string Options = "Enter:\n 0: To Return to Main Menu\n 1: Create Custom Thread\n 2: Check if a thread is Alive\n 3: Check if Thread is Background ";
+       Start: Console.WriteLine(Options);
+        string? Input = Console.ReadLine();
+
+        switch (Input)   
+	    {
+            case "0":
+                Console.Clear();
+                MenuCommands();
+                break;
+            case "1":
+                Console.Clear();
+                CreateNewThread();
+                break;
+            case "2":
+                Console.Clear();
+                IsAlive();
+                break;
+            case "3":
+                Console.Clear();
+                IsBackGround();
+                break;
+            default:
+                Console.Clear();
+                Console.WriteLine($"{Input} is not a Valid Option");
+                goto Start;
+	    }
     }
 }
 
