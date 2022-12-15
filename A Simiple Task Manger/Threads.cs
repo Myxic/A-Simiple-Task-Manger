@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using A_Simiple_Task_Manager;
 
+
 namespace A_Simiple_Task_Manger
 {
     internal class Threads : TasksManager
@@ -54,9 +55,21 @@ namespace A_Simiple_Task_Manger
         }
         protected static void IsAlive() 
 	    {
-            //Thread thr = Thread.GetCurrentProcessorId();
+            var ID = Console.ReadLine();
+            try
+            {
+                int Id = Convert.ToInt32(ID);
+                Thread thr = Thread.CurrentThread;
 
-            //Console.WriteLine($"Is this Thread Alive? : {thr.IsAlive}");
+                Console.WriteLine($"Is this Thread Alive? : {thr.IsAlive}");
+            }
+            catch (Exception ex)
+            {
+                Console.Clear();
+                Console.WriteLine(ex.Message);
+                ViewProcesses();
+            }
+            
         }
         protected static void IsBackGround() 
 	    {
