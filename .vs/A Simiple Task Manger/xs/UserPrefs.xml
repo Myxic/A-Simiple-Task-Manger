@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{9750185B-EA0C-466B-BFAC-ECCE37DD892A}|Default">
-  <MonoDevelop.Ide.ItemProperties.A_220Simiple_220Task_220Manger PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="A Simiple Task Manger/Threads.cs">
     <Files>
-      <File FileName="A Simiple Task Manger/Program.cs" Line="30" Column="32" />
+      <File FileName="A Simiple Task Manger/Program.cs" Line="14" Column="118" />
       <File FileName="A Simiple Task Manger/TasksManager.cs" Line="55" Column="46" />
-      <File FileName="A Simiple Task Manger/Threads.cs" Line="62" Column="50" />
+      <File FileName="A Simiple Task Manger/Threads.cs" Line="64" Column="77" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,14 +18,10 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.A_220Simiple_220Task_220Manger PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

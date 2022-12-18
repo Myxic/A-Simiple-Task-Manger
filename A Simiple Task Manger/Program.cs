@@ -11,7 +11,7 @@ class Program : Threads
 
     private static void MenuCommands()
     {
-        string Menu = "Enter: \n 1: To view all Running Tasks \n  2: To Should be able to start any task\n 0: To Exit Console";
+        string Menu = "Enter: \n 1: To view all Running Tasks \n 2: To Start any task\n 3: For More Options(Threads) \n 0: To Exit Console";
        start: Console.Write($"******************************************\n{Menu}\n*******************************************\n ==> ");
         string? input = Console.ReadLine();
 
@@ -24,6 +24,10 @@ class Program : Threads
             case "2":
                 Console.Clear();
                 StartProcess();
+                break;
+            case "3":
+                Console.Clear();
+                ThreadsOptions();
                 break;
             case "0":
                 Environment.Exit(0);
