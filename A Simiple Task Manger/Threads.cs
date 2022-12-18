@@ -50,11 +50,55 @@ namespace A_Simiple_Task_Manger
 
         protected static void CreateNewThread()
         {
-            //Thread thr = Thread.GetCurrentProcessorId();
+          start:  Console.Write("How many threads do you want [1] or [2]\n ==> ");
+            string? input = Console.ReadLine();
+            switch (input)
+            {
+                case "1":
+                    Console.Clear();
+                    DoSomething();
+                    Program.ThreadsOptions();
+                    break;
+                case "2":
+                    Console.Clear();
+                    ThreadStart threadStart = new ThreadStart(DoSomething);
+
+                    Thread backgroundThread = new Thread(threadStart);
+
+                    backgroundThread.Name = "Secondary";
+
+                    backgroundThread.Start();
+                    Program.ThreadsOptions();
+                    break;
+                default:
+                    Console.Clear();
+                    Console.WriteLine($"{input} is a wrong option");
+                    goto start;
+
+            }
+        }
+
+     
+         protected static void DoSomething()
+        {
+
+            Console.Write("Your numbers: ");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("-> {0} is executing DoSomething()",
+                Thread.CurrentThread.Name);
+                Console.Write($"{i}");
+
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+
+            }
 
         }
-        protected static void IsAlive() 
-	    {
+
+        protected static void IsAlive()
+        {
             var ID = Console.ReadLine();
             try
             {
@@ -69,13 +113,24 @@ namespace A_Simiple_Task_Manger
                 Console.WriteLine(ex.Message);
                 ViewProcesses();
             }
-            
-        }
-        protected static void IsBackGround() 
-	    {
-            //Thread thr = Thread.GetCurrentProcessorId();
 
-            //Console.WriteLine($"Is this Thread Background? : {thr.IsBackground}");
+        }
+        protected static void IsBackGround()
+        {
+            var ID = Console.ReadLine();
+            try
+            {
+                int Id = Convert.ToInt32(ID);
+                Thread thr = Thread.CurrentThread;
+
+                Console.WriteLine($"Is this Thread Background? : {thr.IsBackground}");
+            }
+            catch (Exception ex)
+            {
+                Console.Clear();
+                Console.WriteLine(ex.Message);
+                ViewProcesses();
+            }
         }
     }
 }
