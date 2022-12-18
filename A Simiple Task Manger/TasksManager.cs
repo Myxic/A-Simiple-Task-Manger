@@ -54,18 +54,31 @@ namespace A_Simiple_Task_Manger
 	    }
         protected static void StartProcess() 
 	    {
-            start: Console.Write("Enter the directory of the process you want to start\n ==> ");
+            start: Console.Write("Enter the directory of the process you want to start or [0] to return to Main Menu\n ==> ");
+
             var directory = Console.ReadLine();
-            try
-            {
-                Process proc = Process.Start($"{directory}");
-            }
-            catch (Exception ex)
-            {
-                Console.Clear();
-                Console.WriteLine(ex.Message);
-                goto start;
-            }
+            switch (directory)
+	        {
+                case "0":
+                    Console.Clear();
+                    Program.MenuCommands();
+                    break;
+                default:
+                    try
+                    {
+                        Process proc = Process.Start($"{directory}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.Clear();
+                        Console.WriteLine(ex.Message);
+                        goto start;
+                    }
+                    Program.OptionKeys();
+                    break;
+
+                    }
+           
 	    }
     }
 }

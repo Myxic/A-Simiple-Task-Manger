@@ -99,38 +99,39 @@ namespace A_Simiple_Task_Manger
 
         protected static void IsAlive()
         {
-            var ID = Console.ReadLine();
+          
             try
             {
-                int Id = Convert.ToInt32(ID);
+               
                 Thread thr = Thread.CurrentThread;
 
-                Console.WriteLine($"Is this Thread Alive? : {thr.IsAlive}");
+                Console.WriteLine($"Is this Thread Alive? : {thr.IsAlive}\t Thread Id: {thr.ManagedThreadId}\n");
             }
             catch (Exception ex)
             {
                 Console.Clear();
                 Console.WriteLine(ex.Message);
-                ViewProcesses();
+               
             }
-
+            Program.ThreadsOptions();
         }
         protected static void IsBackGround()
         {
-            var ID = Console.ReadLine();
+           
             try
             {
-                int Id = Convert.ToInt32(ID);
+            
                 Thread thr = Thread.CurrentThread;
 
-                Console.WriteLine($"Is this Thread Background? : {thr.IsBackground}");
+                Console.WriteLine($"Is this Thread Background? : {thr.IsBackground}\t Thread Id: {thr.ManagedThreadId}\n");
             }
             catch (Exception ex)
             {
                 Console.Clear();
                 Console.WriteLine(ex.Message);
-                ViewProcesses();
+             
             }
+            Program.ThreadsOptions();
         }
     }
 }

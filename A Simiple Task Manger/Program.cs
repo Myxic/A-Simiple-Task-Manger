@@ -9,7 +9,7 @@ class Program : Threads
         MenuCommands();
     }
 
-    private static void MenuCommands()
+    public static void MenuCommands()
     {
         string Menu = "Enter: \n 1: To view all Running Tasks \n 2: To Start any task\n 3: For More Options(Threads) \n 0: To Exit Console";
        start: Console.Write($"******************************************\n{Menu}\n*******************************************\n ==> ");
